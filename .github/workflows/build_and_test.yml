@@ -61,6 +61,8 @@ jobs:
         CC_TEST_REPORTER_ID: ec2cc556f162ea59e9cc151576aed623d57f930f45ab8698b6408666a48fd176
       with:
         # The report file must be there, otherwise Code Climate won't find it      
+        debug: true
+        prefix: ${{github.workspace}}/BasicMeleeBot
         coverageLocations: |
           ${{github.workspace}}/BasicMeleeBot/build/customJacocoReportDir/test/jacocoTestReport.xml:jacoco
         
